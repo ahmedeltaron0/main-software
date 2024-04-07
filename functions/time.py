@@ -25,4 +25,3 @@ def get_time():
     
     return f"الساعة الآن {hour_ar} {period} و {minute_ar} دقيقة و {second_ar} ثانية"
 
-print(get_time())

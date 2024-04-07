@@ -1,15 +1,12 @@
+# ALL IMOPRTS GO HERE 
+
 from functions.get_audio import get_audio
 from functions.gemini import get_keyword_for_query
-from functions.time import get_time
+from functions.check_keyword import check_keyword
+
+
+# ALL FUNCTION CALLS GO HERE
 
 captured_voice = get_audio()
-
 response_keyword = get_keyword_for_query(captured_voice)
-print(response_keyword)
-
-def check_keyword(keyword):
-    if keyword == "معرفة-الوقت":
-        print(get_time())
-    else:
-        print("الكلمة الرئيسية غير صحيحة.")
-
+result = check_keyword(response_keyword)

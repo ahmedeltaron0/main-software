@@ -20,6 +20,7 @@ def get_keyword_for_query(user_query):
         {"name": "Translation and Optical Character Recognition (OCR)", "keyword": "الترجمة-والتعرف-الضوئي-على-الحروف"},
         {"name": "Send Messages on Telegram", "keyword": "إرسال-رسائل-تلغرام"},
         {"name": "Messenger Calls", "keyword": "مكالمات-الماسنجر"},
+        {"name": "Currency Detection", "keyword": "كشف-العملة"},
     ]
     
     # Generate a prompt focusing on keywords
