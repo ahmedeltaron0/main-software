@@ -10,3 +10,4 @@ from functions.check_keyword import check_keyword
 captured_voice = get_audio()
 response_keyword = get_keyword_for_query(captured_voice)
 result = check_keyword(response_keyword)
+

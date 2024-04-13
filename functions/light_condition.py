@@ -17,10 +17,13 @@ def check_light_condition():
     mean = cv2.meanStdDev(frame)
     #print("Mean brightness:", mean[0][0])  
     if mean[0][0] < 50:  
-        print("الإضاءةغير كافية")
+        cap.release()
+        cv2.destroyAllWindows()
+        return "الإضاءةغير كافية"
     else:
-        print("الإضاءة كافية")
+        cap.release()
+        cv2.destroyAllWindows()
+        return "الإضاءة كافية"
 
-    cap.release()
-    cv2.destroyAllWindows()
-check_light_condition()
+
+

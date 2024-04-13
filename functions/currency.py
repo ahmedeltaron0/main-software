@@ -1,7 +1,6 @@
 import google.generativeai as genai
 import os
 from deep_translator import GoogleTranslator
-from snapshot import snapshot
 from PIL import Image
 from dotenv import dotenv_values
 

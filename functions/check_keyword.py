@@ -3,6 +3,7 @@ from functions.date_meladi import get_gregorian_date
 from functions.date_Hijri import get_hijri_date
 from functions.light_condition import check_light_condition
 from functions.currency import detect_currency
+from functions.snapshot import snapshot
 
 
 def check_keyword(keyword):
@@ -14,9 +15,11 @@ def check_keyword(keyword):
     elif keyword == "فحص-الإضاءة":
         check_light_condition()
     elif keyword == "كشف-العملة":
-        if check_light_condition == ():
-            print(detect_currency()) 
+        light_condition = check_light_condition()
+        if light_condition == "الإضاءة كافية":
+            print(detect_currency(snapshot()))
         else:
-            break  
+            print("الإضاءة غير كافية")
+
     else:
         print("الكلمة الرئيسية غير صحيحة.")
