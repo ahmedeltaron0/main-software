@@ -31,7 +31,7 @@ def get_keyword_for_query(user_query):
     full_prompt = f"{prompt} User's query: \"{user_query}\""
     
     # Configuration for the Gemini API
-    api_key = 'AIzaSyCHyeW-T_9nEo8H3NMiaCcqcZHn0Stq1pE'  # Replace with your actual API key
+    api_key = "AIzaSyCHyeW-T_9nEo8H3NMiaCcqcZHn0Stq1pE"  # Replace with your actual API key
     genai.configure(api_key=api_key)
     model = genai.GenerativeModel('gemini-pro')
     
