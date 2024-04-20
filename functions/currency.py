@@ -6,7 +6,7 @@ from dotenv import dotenv_values
 
 GEMINI_KEY = dotenv_values('.env').get('gemini_api')
 
-genai.configure(api_key=os.getenv("AIzaSyCHyeW-T_9nEo8H3NMiaCcqcZHn0Stq1pE") or "AIzaSyCHyeW-T_9nEo8H3NMiaCcqcZHn0Stq1pE")
+genai.configure(api_key=os.getenv("AIzaSyBWGO_ggtKGhgTwrHV61ubrNMomEyk5wdc") or "AIzaSyBWGO_ggtKGhgTwrHV61ubrNMomEyk5wdc")
 
 model =  genai.GenerativeModel("gemini-pro")
 vision_model = genai.GenerativeModel("models/gemini-pro-vision")
